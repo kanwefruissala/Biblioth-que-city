@@ -30,7 +30,6 @@ double addition (double a, double b)
         double s;
     s=a*a;
         return s;
-
 }
     double puissance_n (double a, double n)
 {
@@ -55,7 +54,6 @@ double addition (double a, double b)
         return a/2;
     else
         return ((racine_carre(a,n-1) + a/(racine_carre(a,n-1)))/2);
-
      }
 
      double PI(double n)
@@ -74,12 +72,29 @@ double addition (double a, double b)
 
    return (k-1+a)/k;
    else
-    return ((k-1)*racine_nieme(a,n-1,k) + a/(pow(racine_nieme(a,n-1,k),(k-1))))/k;
+   return ((k-1)*racine_nieme(a,n-1,k) + a/(pow(racine_nieme(a,n-1,k),(k-1))))/k;
 
-}
+}   double simplification(flat a,float b);
+ {
 
-
-
+ }
+   double comparaison (float a, float b);
+   {
+       float T;
+       T=a-b;
+       if(T<0)
+       {
+           printf(a inferieur a b);
+       }
+       else if(T>0)
+       {
+           printf(a superieur a b);
+       }
+       else if(T=o)
+       {
+           printf(a est egal a b);
+       }
+   }
 
 int main(int argc, char *argv[])
 {
@@ -103,6 +118,8 @@ int Choix_menu;
     printf(" 7. Racine Carree\n " );
     printf(" 8. Racine n-ieme\n " );
     printf(" 9. Puissance simple\n");
+    printf("10. simplication\n");
+    printf("11. comparaison\n");
     printf(" 0. Quitter\n\n " );
 
     printf(" ==========================Veuillez choisir une operation a effectuer==============================\n");
@@ -222,6 +239,33 @@ else if(a<0 )
         printf("entrer un nombre 1 :\n");
         scanf("%lf",&x);
         printf("la somme vaut : %lf\n\n",(puissance(x)));
+        double simplification(flat a,float b);
+ {
+
+ }
+   double comparaison (float a, float b);
+   {
+
+       printf("Entrer un premier nombre:\n");
+       scanf("%d",&a);
+       printf("Entrer un second nombre:\n");
+       scanf("%d",&b);
+       float T;
+       T=a-b;
+       if(T<0)
+       {
+           printf(a inferieur a b);
+       }
+       else if(T>0)
+       {
+           printf(a superieur a b);
+       }
+       else if(T=o)
+       {
+           printf(a est egal a b);
+       }
+   }
+
         printf ("appuyer sur 1 pour continuer\n");
             printf ("appuyer sur 0 pour dire bye bye\n\n\n\n");
             scanf ("%d",&test);
@@ -250,3 +294,16 @@ while (test==1);
 
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
